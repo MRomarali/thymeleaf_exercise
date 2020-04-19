@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <script defer th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <script defer th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+    <script defer th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.css}">
+    <link rel="stylesheet" th:href="@{/static/css/style.css}">
+    <meta charset="UTF-8">
+    <title>Fever</title>
+</head>
+<body>
+    <div class="container">
+        <form th:action="@{fever}" method="post">
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label col-form-label-sm">Name</label>
+                <div class="col-sm-8">
+                    <input type="number" class="form-control form-control-sm" name="temperature" placeholder="Enter your temperature">
+                </div>
+            </div>
+            <div class="form-group row">
+                <button type="submit">Send</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

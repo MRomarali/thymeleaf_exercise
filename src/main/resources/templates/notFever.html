@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <script defer th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <script defer th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+    <script defer th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.css}">
+    <link rel="stylesheet" th:href="@{/static/css/style.css}">
+    <meta charset="UTF-8">
+    <title>not fever</title>
+</head>
+<body>
+    <div class="container">
+        <p>You have low temp, go visit a doctor, you might have hypothermia</p>
+    </div>
+<form th:action="@{index}">
+    <div>
+        <button class="btn btn-outline-info" th:href="@{index}">To first page</button>
+    </div>
+</form>
+</body>
+</html>
